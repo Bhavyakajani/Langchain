@@ -1,0 +1,1 @@
+THis file is just to test the vector store db and how llms search this DB to retrieve the best matched result based on Users query.
