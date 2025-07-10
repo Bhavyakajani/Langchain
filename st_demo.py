@@ -12,7 +12,7 @@ llama = ChatOllama(model='llama3.2')
 with st.sidebar:
     st.title("Provide your API key:")
     API_KEY = st.text_input("OpenAI api key", type = "password")
-    model_choice = st.selectbox("Choose a model", ['llama3.2', 'OpenAI'])
+    model_choice = st.selectbox("Choose an LLM", ['llama3.2', 'OpenAI'])
     if model_choice == 'OpenAI':
         llama = ChatOpenAI(model='gpt-3.5-turbo', api_key = API_KEY)
     else:
